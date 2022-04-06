@@ -1,0 +1,20 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "tranning nodejs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "duckhanh712",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "http": "0.0.1-security",
+    "knex": "^1.0.5",
+    "nodemon": "^2.0.15"
+  }
+}
