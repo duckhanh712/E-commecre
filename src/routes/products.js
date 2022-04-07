@@ -9,6 +9,11 @@ router.get('/products', async (req, res) => {
   return res.send(product)
 })
 
+router.get('/products/:productId', async (req, res) => {
+  const productId = req.params.productId
+  const product = await DB('products').where('id', productId).first()
+  return res.send(product)
+})
 
 // app.post('/contacts',async (req, res) => {
 //   console.log(40,req.body)
