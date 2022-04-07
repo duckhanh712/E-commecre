@@ -1,13 +1,13 @@
 import knex from 'knex'
 
-let connection = {
-  host: '127.0.0.1',
-  port: '3306',
-  user: 'root',
-  password: 'mauFJcuf5dhRMQrjj',
-  database: 'webshop',
-  charset: 'utf8',
 
+const connection = {
+  host: 'http://95.111.192.214',
+  port: '3306',
+  user: 'sk_local',
+  password: 'BIyai917L5G5nrHwnQYC1R5S3N8R3iEY',
+  database: 'sk_local',
+  charset: 'utf8',
 }
 
 const queryBuilder = knex({

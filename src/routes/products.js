@@ -1,11 +1,12 @@
 import express from 'express';
-import knex from '../../datase';
+import DB from '../../database.js';
 
 const router = express.Router();
 
-//get produts all
-router.get('/produtcs', async (req, res) => {
-  const products = await getProducts()
+//get products all
+router.get('/products', async (req, res) => {
+  // const user = await DB('users').where('id', 7996)
+  return res.send("user");
 })
 
 export default router;
