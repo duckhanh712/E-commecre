@@ -15,6 +15,9 @@ router.patch('/profile/:userId', async (req, res) => {
     //     return res.send('ban chua nhap password')
     // }
 
+    // ĐỔI THÔNG TIN LÀ SỬA CẢ TÊN, TUỔI GIỚI TÍNH, CHỨ KHÔNG PHẢI ĐỔI EMAIL, MẬT KHẨU
+    // ĐỔI MẬT KHẨU PHẨI LÀM RIÊNG 1 API 
+
     await DB('users').update({
         email: email,
         password: password
